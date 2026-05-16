@@ -46,22 +46,97 @@ The analysis is performed using **Python** in a Jupyter/Google Colab Notebook en
 
 ## 📊 Key Insights & Analytics
 
-<details>
-<summary><b>1. Data Overview & Cleaning</b> (Click to expand)</summary>
+### 1. 🔍 Missing Values Analysis
+> Identifies columns with significant missing data to guide the data cleaning strategy.
 
-- The dataset contains **7,787 entries** across **12 columns**.
-- **Missing Values Analysis:** Identified missing data primarily in the `director` (30.6%), `cast` (9.2%), and `country` (6.5%) columns.
-- **Data Imputation:** Missing categorical values were replaced with `"Unknown"` to prevent data loss and maintain analytical consistency.
-</details>
+![Missing Values by Column](images/graph_1.png)
 
-<details>
-<summary><b>2. Content Mix (Movies vs TV Shows)</b> (Click to expand)</summary>
+- Missing data found primarily in: `director` (30.6%), `cast` (9.2%), and `country` (6.5%)
+- All missing values were imputed with `"Unknown"` to preserve data integrity
 
-- A significant majority of the content on Netflix consists of **Movies** compared to **TV Shows**.
-- Visualized using a Pie Chart to clearly illustrate Netflix's focus and strategy in terms of media formats.
-</details>
+---
 
-> *(Explore the `Netflix_EDA_Project.ipynb` notebook for the complete suite of EDA steps, including distribution plots, bar charts for top producing countries, and time-series analysis of content release years.)*
+### 2. 🎬 Movies vs TV Shows Distribution
+> A breakdown of Netflix's content catalog by media type.
+
+![Movies vs TV Shows](images/graph_2.png)
+
+- **Movies** dominate the Netflix catalog at ~69.6%
+- **TV Shows** account for ~30.4%, showing Netflix's film-first strategy
+
+---
+
+### 3. 🌍 Top 10 Countries by Content Volume
+> Reveals which countries contribute the most content to Netflix's global library.
+
+![Top 10 Countries](images/graph_3.png)
+
+- The **United States** is the top content producer by a wide margin
+- **India** and the **United Kingdom** follow, reflecting Netflix's push for global diversification
+
+---
+
+### 4. 📅 Netflix Content Release Trend Over Years
+> Shows how many titles were released each year, reflecting Netflix's historical output.
+
+![Content Release Trend](images/graph_4.png)
+
+- Content production has grown significantly over the decades
+- A notable surge is visible from **2015 onwards**, aligning with Netflix's global expansion
+
+---
+
+### 5. 📆 Yearly Content Additions (Movies vs TV Shows)
+> Tracks how Netflix has added content year-over-year, split by content type.
+
+![Yearly Content Additions](images/graph_5.png)
+
+- The period **2017–2019** saw the most aggressive content additions
+- Both Movies and TV Shows increased steadily, with Movies consistently dominating
+
+---
+
+### 6. 🔞 Top Content Ratings Distribution
+> Shows the most common content ratings with color coding based on audience certification.
+
+![Content Ratings](images/graph_6.png)
+
+- **TV-MA** (Mature Audiences) is the most frequent rating, indicating adult-focused content
+- **TV-14** and **TV-PG** follow, covering teen and family audiences
+
+---
+
+### 7. 📊 Ratings Distribution by Content Type
+> A multivariate view comparing how ratings differ between Movies and TV Shows.
+
+![Ratings by Content Type](images/graph_7.png)
+
+- TV Shows are more likely to be rated **TV-MA** or **TV-14**
+- Movies have a broader spread across ratings categories
+
+---
+
+### 8. 🔥 Heatmap: Ratings by Content Type
+> A heatmap to visualize the concentration of ratings across Movie and TV Show categories.
+
+![Heatmap Ratings](images/graph_8.png)
+
+- Clearly shows that **TV-MA** dominates for both content types
+- Certain ratings like **NC-17** and **UR** appear exclusively or primarily for Movies
+
+---
+
+### 9. 🎭 Top Genres on Netflix
+> A breakdown of Netflix's most popular content genres.
+
+![Top Genres](images/graph_9.png)
+
+- **Dramas**, **Comedies**, and **Documentaries** are the top three genre categories
+- Genre diversity reflects Netflix's strategy to appeal to all audience preferences
+
+---
+
+> *(Explore the `Netflix_EDA_Project.ipynb` notebook for the full interactive analysis with code and live visualizations.)*
 
 ---
 
