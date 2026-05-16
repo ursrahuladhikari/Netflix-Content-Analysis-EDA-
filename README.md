@@ -44,6 +44,18 @@ The analysis is performed using **Python** in a Jupyter/Google Colab Notebook en
 
 ---
 
+## 🚀 Quick Start
+
+1. Clone this repository to your local machine.
+2. Ensure you have the required Python libraries installed:
+   ```bash
+   pip install pandas numpy matplotlib seaborn
+   ```
+3. Open `Netflix_EDA_Project.ipynb` in **Jupyter Notebook** or upload it to **Google Colab**.
+4. Run all cells to see the step-by-step data cleaning process and generated visualizations.
+
+---
+
 ## 📊 Key Insights & Analytics
 
 ### 1. 🔍 Missing Values Analysis
@@ -151,18 +163,6 @@ The analysis is performed using **Python** in a Jupyter/Google Colab Notebook en
 
 ### Conclusion:
 This Exploratory Data Analysis provides a foundational understanding of the Netflix content library, revealing its diverse content mix, global production footprint, and strategic focus on various genres and audience segments. The insights derived from missing value handling, content distribution, and trend analysis are crucial for informed decision-making in content acquisition, production, and marketing, ultimately contributing to a more data-driven content strategy for Netflix.
-
----
-
-## 🚀 Quick Start
-
-1. Clone this repository to your local machine.
-2. Ensure you have the required Python libraries installed:
-   ```bash
-   pip install pandas numpy matplotlib seaborn
-   ```
-3. Open `Netflix_EDA_Project.ipynb` in **Jupyter Notebook** or upload it to **Google Colab**.
-4. Run all cells to see the step-by-step data cleaning process and generated visualizations.
 
 ---
 
